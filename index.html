@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap4.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+            integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Bootstrap4_Collapse</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <!-- Collapse - Single Target -->
+        <h3 class="text-center">Collapse - Single Target</h3>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Button with data-target
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h3>Collapse</h3>
+                <p class="lead">Toggle the visibility of content across your project with a few classes and our
+                    JavaScript plugins.</p>
+            </div>
+        </div>
+        <!-- Collapse Ends -->
+    </div>
+
+    <div class="container py-5">
+        <!-- Collapse - Multiple Target -->
+        <h3 class="text-center">Collapse - Multiple Target</h3>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+                aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse"
+                aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+                elements</button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Collapse Ends -->
+    </div>
+
+    <div class="container py-5">
+        <!-- Collapse - Accordion -->
+        <h3 class="text-center">Collapse - Accordion</h3>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Collapse - Accordion Ends -->
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap4.min.js"></script>
+</body>
+
+</html>
